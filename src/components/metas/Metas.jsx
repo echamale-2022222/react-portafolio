@@ -30,15 +30,33 @@ export const Metas = () => {
                     </p>
                 </div>
                 <div className="bg-card rounded-lg shadow-md p-6 sm:p-4">
-                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Build a Portfolio</h3>
+                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Exploring Cloud Services</h3>
                     <p className="text-muted-foreground mb-4 sm:text-sm">
-                        Create a web portfolio that showcases my projects and skills.
+                        Explore and work with cloud services like AWS, Azure, or Google Cloud Platform.
                     </p>
                 </div>
                 <div className="bg-card rounded-lg shadow-md p-6 sm:p-4">
-                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Learn React</h3>
+                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Mastering C# and .NET</h3>
                     <p className="text-muted-foreground mb-4 sm:text-sm">
-                        Deepen my knowledge of React, learn best practices, and build projects.
+                        Master C# and .NET framework development skills.
+                    </p>
+                </div>
+                <div className="bg-card rounded-lg shadow-md p-6 sm:p-4">
+                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Learning Ionic</h3>
+                    <p className="text-muted-foreground mb-4 sm:text-sm">
+                        Learn to develop mobile applications using Ionic and related frameworks.
+                    </p>
+                </div>
+                <div className="bg-card rounded-lg shadow-md p-6 sm:p-4">
+                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Learning Next.js</h3>
+                    <p className="text-muted-foreground mb-4 sm:text-sm">
+                        Learn and master Next.js for building modern and fast web applications.
+                    </p>
+                </div>
+                <div className="bg-card rounded-lg shadow-md p-6 sm:p-4">
+                    <h3 className="text-xl font-bold mb-4 sm:text-lg">Learn Spring Boot</h3>
+                    <p className="text-muted-foreground mb-4 sm:text-sm">
+                        Learn and master the use of Spring Boot for backend application development.
                     </p>
                 </div>
             </div>

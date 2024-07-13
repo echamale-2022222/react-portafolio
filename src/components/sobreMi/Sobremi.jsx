@@ -1,50 +1,48 @@
 import React from 'react'
+import { ExampleAvatar } from '../Avatar'
 
 export const Sobremi = () => {
     return (
         <div className="flex items-center justify-center h-screen">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
-                    <div className="rounded-full bg-white p-2 shadow-lg">
-                        <Avatar className="w-32 h-32 bg-[#55efc4] text-6xl border-[6px] border-white sm:w-24 sm:h-24">
-                            <AvatarImage src="/placeholder-user.jpg" />
-                            <AvatarFallback>JP</AvatarFallback>
-                        </Avatar>
+                    <div className="rounded-full bg-white p-2 shadow-lg flex-shrink-0">
+                        <ExampleAvatar className="w-64 h-64 sm:w-50 sm:h-50" />
                     </div>
-                    <div className="text-center md:text-left sm:text-left">
-                        <h2 className="text-3xl font-bold text-black md:text-4xl sm:text-2xl">Jared Palmer</h2>
-                        <p className="mt-2 text-lg font-medium text-black sm:text-base">Software Engineer</p>
-                        <p className="mt-4 text-base text-black sm:text-sm">
-                            I'm a passionate software engineer with a focus on building high-quality, scalable web applications.
+                    <div className="text-center md:text-left sm:text-left md:ml-8">
+                        <h2 className="text-3xl font-bold text-black md:text-4xl sm:text-2xl">Edwar Chamalé</h2>
+                        <p className="mt-2 text-lg font-medium text-black sm:text-base">Junior Backend Developer</p>
+                        <p className="mt-4 text-base text-black md:text-lg lg:text-lg">
+                            Passionate junior backend developer dedicated to continuous learning and growth, with the goal of contributing to innovative projects that push the boundaries of technology. Beyond coding, I enjoy solving problems and collaborating with teams to deliver impactful solutions.
                         </p>
                     </div>
                 </div>
-                <div className="mt-8 flex flex-col items-center gap-4 md:justify-start sm:flex-col sm:items-center md:flex-row">
-                    <Link
+                <div className="mt-8 flex flex-col items-center gap-4 md:flex-row md:justify-start sm:flex-col sm:items-center">
+                    <a
                         href="#"
                         className="inline-flex h-10 items-center justify-center rounded-md bg-black px-4 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
                         prefetch={false}
                     >
                         <GithubIcon className="mr-2 h-4 w-4" /> Github
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="#"
-                        className="inline-flex h-10 items-center justify-center rounded-md border border-black bg-transparent px-4 text-sm font-medium text-black shadow-sm transition-colors hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
+                        className="inline-flex h-10 items-center justify-center rounded-md border border-black bg-transparent px-4 text-sm font-medium text-black shadow-sm transition-colors hover:bg-gray-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
                         prefetch={false}
                     >
                         <BriefcaseIcon className="mr-2 h-4 w-4" /> Computrabajo
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="#"
-                        className="inline-flex h-10 items-center justify-center rounded-md border border-black bg-transparent px-4 text-sm font-medium text-black shadow-sm transition-colors hover:bg-black hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
+                        className="inline-flex h-10 items-center justify-center rounded-md border border-black bg-transparent px-4 text-sm font-medium text-black shadow-sm transition-colors hover:bg-gray-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
                         prefetch={false}
                     >
                         <LinkedinIcon className="mr-2 h-4 w-4" /> LinkedIn
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 function BriefcaseIcon(props) {
