@@ -1,47 +1,35 @@
-import React from 'react'
-import { useEffect } from 'react'
+import { useState } from 'react'
+import React from 'react';
 import { Card } from '../Card'
-import { CardTitle } from '../CardTitle'
-import { getProjects } from '../../service'
-import toast from 'react-hot-toast'
+import { useProjects } from '../../shared/hooks'
 
-export const Proyectos = () => {
-    const [projects, setProjects] = React.useState([])
+const Proyectos = () => {
+    const { projects, loading } = useProjects();
 
-    useEffect(() => {
-        const fetchProjects = async () => {
-            try {
-                const response = await getProjects();
-                if (!response.ok) {
-                    throw new Error('Failed to fetch projects');
-                }
-                const data = await response.data.json();
-                console.log(data, "data");
-                setProjects(data);
-            } catch (error) {
-                console.error(error);
-                toast.error('Failed to fetch projects');
-            }
-        };
+    console.log("projects", projects)
 
-        fetchProjects();
-        console.log(projects);
-    }, []);
+    if (loading) {
+        return <p>Cargando proyectos...</p>;
+    }
 
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex justify-center items-center">
             <div className="container grid gap-8 px-4 md:px-6 flex justify-center">
+            <h2 className="text-3xl font-bold mb-8 sm:text-2xl text-white">My projects</h2>
                 {projects.map((project) => (
                     <Card
-                        key={project._id} // Asegúrate de tener un identificador único para cada proyecto
-                        title={project.titulo} // Ajusta según la estructura de tu objeto de proyecto
-                        image={project.imagePrincipal} // Ajusta según la estructura de tu objeto de proyecto
-                        technologies={['React', 'Lorem ipsum', 'Node.js']} // Ejemplo de tecnologías (reemplaza con datos reales)
-                        description={project.descripcion} // Ajusta según la estructura de tu objeto de proyecto
-                        githubLink={project.link} // Ajusta según la estructura de tu objeto de proyecto
+                        key={project._id}
+                        title={project.titulo}
+                        image={project.imagenPrincipal}
+                        technologies={project.tecnologiasUtilizadas}
+                        description={project.descripcion}
+                        githubLink={project.link}
+                        className={'bg-slate-900 text-white'}
                     />
                 ))}
             </div>
         </section>
-    )
-}
+    );
+};
+
+export default React.memo(Proyectos);

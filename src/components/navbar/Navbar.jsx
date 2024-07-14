@@ -1,11 +1,12 @@
+import React from "react";
 import { useState } from "react"
 import { Button } from '../Button'
 
-export const Navbar = () => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
-            <header className="bg-[#1e293b] text-white py-4 shadow">
+            <header className="bg-[#0F172A] text-white py-4 shadow">
                 <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
                     <a href="#" className="flex items-center gap-2 font-bold text-lg">
                         <CodeIcon className="h-6 w-6" />
@@ -78,6 +79,8 @@ const CodeIcon = (props) => (
         <polyline points="8 6 2 12 8 18" />
     </svg>
 );
+
+export default React.memo(Navbar);
 
 function MenuIcon(props) {
     return (

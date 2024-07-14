@@ -3,39 +3,39 @@ import { ExampleAvatar } from '../Avatar'
 
 export const Sobremi = () => {
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center min-h-[50dvh]">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
                     <div className="rounded-full bg-white p-2 shadow-lg flex-shrink-0">
                         <ExampleAvatar className="w-64 h-64 sm:w-50 sm:h-50" />
                     </div>
                     <div className="text-center md:text-left sm:text-left md:ml-8">
-                        <h2 className="text-3xl font-bold text-black md:text-4xl sm:text-2xl">Edwar Chamalé</h2>
-                        <p className="mt-2 text-lg font-medium text-black sm:text-base">Junior Backend Developer</p>
-                        <p className="mt-4 text-base text-black md:text-lg lg:text-lg">
+                        <h2 className="text-3xl font-bold text-white md:text-4xl sm:text-2xl">Edwar Chamalé</h2>
+                        <p className="mt-2 text-lg font-medium text-gray-300 sm:text-base">Junior Backend Developer</p>
+                        <p className="mt-4 text-base text-white md:text-lg lg:text-lg">
                             Passionate junior backend developer dedicated to continuous learning and growth, with the goal of contributing to innovative projects that push the boundaries of technology. Beyond coding, I enjoy solving problems and collaborating with teams to deliver impactful solutions.
                         </p>
                     </div>
                 </div>
                 <div className="mt-8 flex flex-col items-center gap-4 md:flex-row md:justify-start sm:flex-col sm:items-center">
                     <a
-                        href="#"
-                        className="inline-flex h-10 items-center justify-center rounded-md bg-black px-4 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
-                        prefetch={false}
+                        href="https://github.com/echamale-2022222"
+                        className="inline-flex h-10 items-center justify-center rounded-md bg-[#64748B] px-4 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
+                        target='_blank'
                     >
                         <GithubIcon className="mr-2 h-4 w-4" /> Github
                     </a>
                     <a
                         href="#"
-                        className="inline-flex h-10 items-center justify-center rounded-md border border-black bg-transparent px-4 text-sm font-medium text-black shadow-sm transition-colors hover:bg-gray-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
+                        className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#64748B] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
                         prefetch={false}
                     >
                         <BriefcaseIcon className="mr-2 h-4 w-4" /> Computrabajo
                     </a>
                     <a
-                        href="#"
-                        className="inline-flex h-10 items-center justify-center rounded-md border border-black bg-transparent px-4 text-sm font-medium text-black shadow-sm transition-colors hover:bg-gray-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
-                        prefetch={false}
+                        href="https://www.linkedin.com/in/edwar-rené-chamalé-gonzález-724918296/"
+                        className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-4 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#64748B] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 w-full sm:w-auto"
+                        target='_blank'
                     >
                         <LinkedinIcon className="mr-2 h-4 w-4" /> LinkedIn
                     </a>
